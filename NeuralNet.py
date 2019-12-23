@@ -2,14 +2,14 @@ import numpy as np
 import math
 import random
 
-learnRate = 0.2  # η
-errorThresh = 0.2  # μ
+learnRate = 0.2  #η
+errorThresh = 0.2  #μ
 
 inp = np.array([0,1,0,1,1])
 target = np.array([0,1,1])
 
-weightInp = []
-weightHid = []
+weightHid = np.zeros((4, 3), np.float)
+weightInp = np.zeros((5, 4), np.float)
 
 dataset = [["00000",     "011"],
            ["00001",     "010"],
@@ -95,20 +95,25 @@ def Feedfoward(inp, target, weightInp, weightHid):
     netO = np.dot(outH, weightHid)
     outO = sigmoid(netO)
 
-    errList = np.array([0, 0, 0])
+    errList = np.array([0.0, 0.0, 0.0])
+    #testList = np.array([5,5,5])
+
     i = 0
-    for x in outO:
-        errList[i] = np.subtract(target[i], x)
-        i+=1
+    for i in range(3):
+        errList[i] = np.subtract(target[i], outO[i])
+        i += 1
 
     print("INPUT\n", inp)
     print("TARGET\n", target)
     print("NETH\n", netH)
     print("OUTH\n", outH)
     print("NETO\n", netO)
-    print("OUTO\n", outO)#
+    print("OUTO\n", outO)
     print("ERRORLIST\n", errList)
+    #print("TESTLIST\n", testList)
+
     backProb(outO, outH, target)
+
     return outO, outH, errList
 
 def sigmoid(x):
@@ -124,7 +129,13 @@ def backProb(outputO, outputH, target):
     for i in range(5):
         for j in range(4):
             hiddenLayerDelta = (outputH) * (1 - outputH) * addition(outputLayerDelta, weightHid[j])
-            weightInp[i][j] += learnRate*hiddenLayerDelta*inp[i]
+            weightInp[i][j] += learnRate*hiddenLayerDelta[j]*inp[i]
+
+    print("\n\nOUTPUTDELTA\n", outputLayerDelta)
+    print("WEIGHTHIDDEN\n", weightHid)
+    print("HIDDENDELTA\n", hiddenLayerDelta)
+    print("WEIGHTINP\n", weightInp)
+
 
 def addition(outDelta, outputOLayer):
     result = 0
