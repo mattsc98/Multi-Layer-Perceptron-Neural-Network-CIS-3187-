@@ -1,6 +1,7 @@
 import numpy as np
 import math
 import random
+import matplotlib
 
 learnRate = 0.2  #η
 errorThresh = 0.2  #μ
@@ -12,6 +13,8 @@ errorThresh = 0.2  #μ
 # weightInp = np.zeros((5, 4), np.float)
 weightInp = np.random.uniform(-1, 1, (5, 4))
 weightHid = np.random.uniform(-1, 1, (4, 3))
+
+badfacts = 0
 
 dataset = [["00000",     "011"],
            ["00001",     "010"],
@@ -85,7 +88,6 @@ training = [["00000",     "011"],
 
 
 def setInputs(data, input, target):
-    # print("a")
     for x in range(len(data)):
         temp = list(data[x][0])
         temp_list = []
@@ -107,8 +109,8 @@ def setInputs(data, input, target):
     # print(target)
     return input, target
 
-def Feedfoward(inp, target, weightInp, weightHid):
-
+def Feedfoward(inp, target, weightInp, weightHid, badfacts):
+    #badfacts = 0
     netH = np.dot(inp, weightInp)
     outH = sigmoid(netH)
 
@@ -118,23 +120,24 @@ def Feedfoward(inp, target, weightInp, weightHid):
     errList = np.array([0.0, 0.0, 0.0])
     #testList = np.array([5,5,5])
 
-    i = 0
     for i in range(3):
         errList[i] = np.subtract(target[i], outO[i])
-        i += 1
 
-    # print("INPUT\n", inp)
-    # print("TARGET\n", target)
-    # print("NETH\n", netH)
-    # print("OUTH\n", outH)
-    # print("NETO\n", netO)
-    # print("OUTO\n", outO)
-    # print("ERRORLIST\n", errList)
+        if(abs(errList[i]) > errorThresh):
+            badfacts += 1
+
+    print("INPUT\n", inp)
+    print("TARGET\n", target)
+    #print("NETH\n", netH)
+    #print("OUTH\n", outH)
+    #print("NETO\n", netO)
+    print("OUTO\n", outO)
+    print("ERRORLIST\n", errList)
     #print("TESTLIST\n", testList)
 
 
     #backProb(outO, outH, target, inp)
-    return outO, outH
+    return outO, outH, badfacts
 
 def sigmoid(x):
     return 1/(1 + np.exp(-x))
@@ -174,34 +177,45 @@ def addition(outDelta, outputOLayer):
 #
 #     print(weightL)
 
+# setInputs()
+#make 2 arrays, 1 5x4 and 4x3
+#store in here the weights
+
 def main():
     #weightInp = np.random.uniform(-1, 1, (5, 4))
     #weightHid = np.random.uniform(-1, 1, (4, 3))
-    for i in range(100):
-        trainingSet()
-
-def trainingSet():
+    # if (badfacts > 0):
+    #     else: continue
     train_input = []
     train_target = []
 
     training_input, training_target = setInputs(training, train_input, train_target)
 
-    for i in range(25):
-        outO, outH = Feedfoward(training_input[i], training_target[i], weightInp, weightHid)
-        backProb(outO, outH, training_target[i], training_input[i])
-
-def testingSet():
     test_input = []
     test_target = []
 
     testing_input, testing_target = setInputs(training, test_input, test_target)
 
-    for i in range(5):
-        outO, outH = Feedfoward(testing_input[i], testing_target[i], weightInp, weightHid)
+    badfactsGraph = np.zeros(100)
+    print("-----TRAINING-----")
+    for epoch in range(100):
+        badfacts = 0
+        for i in range(25):
+            outO, outH, badfacts = Feedfoward(training_input[i], training_target[i], weightInp, weightHid, badfacts)
+            if (badfacts > 0):
+                backProb(outO, outH, training_target[i], training_input[i])
+            else: continue
+        badfactsGraph[epoch] = badfacts
+        print("==============================")
+        print(badfactsGraph)
 
-# setInputs()
-#make 2 arrays, 1 5x4 and 4x3
-#store in here the weights
+        m
+    print("-----TESTING-----")
+    badfacts = 0
+    for i in range(5):
+        outO, outH, badfacts = Feedfoward(testing_input[i], testing_target[i], weightInp, weightHid, badfacts)
+
+
 
 
 main()

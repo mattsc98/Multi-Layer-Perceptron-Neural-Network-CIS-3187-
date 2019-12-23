@@ -33,6 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Python.NeuralNet">
     <configuration name="Dataset" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -137,7 +138,7 @@
       <workItem from="1576433396157" duration="692000" />
       <workItem from="1576575110590" duration="2484000" />
       <workItem from="1576601610943" duration="20076000" />
-      <workItem from="1577083160347" duration="14236000" />
+      <workItem from="1577083160347" duration="19490000" />
     </task>
     <servers />
   </component>
@@ -145,22 +146,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="278" key="GridCell.Tab.0.bottom" timestamp="1577108032793">
+    <state width="1493" height="278" key="GridCell.Tab.0.bottom" timestamp="1577112812667">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="278" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577108032793" />
-    <state width="1493" height="278" key="GridCell.Tab.0.center" timestamp="1577108032793">
+    <state width="1493" height="278" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577112812667" />
+    <state width="1493" height="278" key="GridCell.Tab.0.center" timestamp="1577112812667">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="278" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1577108032793" />
-    <state width="1493" height="278" key="GridCell.Tab.0.left" timestamp="1577108032793">
+    <state width="1493" height="278" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1577112812667" />
+    <state width="1493" height="278" key="GridCell.Tab.0.left" timestamp="1577112812667">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="278" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1577108032793" />
-    <state width="1493" height="278" key="GridCell.Tab.0.right" timestamp="1577108032793">
+    <state width="1493" height="278" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1577112812667" />
+    <state width="1493" height="278" key="GridCell.Tab.0.right" timestamp="1577112812667">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="278" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577108032793" />
+    <state width="1493" height="278" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577112812667" />
     <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1577105085712">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -177,6 +178,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1577105085711" />
+    <state x="277" y="59" key="SettingsEditor" timestamp="1577118460152">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="277" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1577118460152" />
     <state x="470" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1576268701541">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -188,7 +193,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Assignment$Dataset.coverage" NAME="Dataset Coverage Results" MODIFIED="1576665431716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Assignment$NeuralNet.coverage" NAME="NeuralNet Coverage Results" MODIFIED="1577108032779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Assignment$NeuralNet.coverage" NAME="NeuralNet Coverage Results" MODIFIED="1577112700250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Assignment$Test.coverage" NAME="Test Coverage Results" MODIFIED="1576173209794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
