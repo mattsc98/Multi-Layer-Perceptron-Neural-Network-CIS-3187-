@@ -2,6 +2,7 @@ import numpy as np
 import math
 import random
 import matplotlib
+import matplotlib.pyplot as plt
 
 learnRate = 0.2  #η
 errorThresh = 0.2  #μ
@@ -120,11 +121,16 @@ def Feedfoward(inp, target, weightInp, weightHid, badfacts):
     errList = np.array([0.0, 0.0, 0.0])
     #testList = np.array([5,5,5])
 
+    badOut = 0
+
     for i in range(3):
         errList[i] = np.subtract(target[i], outO[i])
 
         if(abs(errList[i]) > errorThresh):
-            badfacts += 1
+            badOut += 1
+
+    if(badOut > 0):
+        badfacts += 1
 
     print("INPUT\n", inp)
     print("TARGET\n", target)
@@ -134,6 +140,8 @@ def Feedfoward(inp, target, weightInp, weightHid, badfacts):
     print("OUTO\n", outO)
     print("ERRORLIST\n", errList)
     #print("TESTLIST\n", testList)
+
+    #Feedforward Result
 
 
     #backProb(outO, outH, target, inp)
@@ -181,6 +189,13 @@ def addition(outDelta, outputOLayer):
 #make 2 arrays, 1 5x4 and 4x3
 #store in here the weights
 
+def plotGraph(x):
+    plt.plot(x)
+
+    plt.xlabel('Epochs')
+    plt.ylabel('Bad Facts')
+    plt.show()
+
 def main():
     #weightInp = np.random.uniform(-1, 1, (5, 4))
     #weightHid = np.random.uniform(-1, 1, (4, 3))
@@ -196,24 +211,31 @@ def main():
 
     testing_input, testing_target = setInputs(training, test_input, test_target)
 
-    badfactsGraph = np.zeros(100)
+    badfactsGraph = np.zeros(555)
     print("-----TRAINING-----")
-    for epoch in range(100):
+    badfacts = 1
+    epoch = 0
+    while (badfacts != 0):
+    #for epoch in range(200):
         badfacts = 0
         for i in range(25):
             outO, outH, badfacts = Feedfoward(training_input[i], training_target[i], weightInp, weightHid, badfacts)
             if (badfacts > 0):
                 backProb(outO, outH, training_target[i], training_input[i])
             else: continue
-        badfactsGraph[epoch] = badfacts
-        print("==============================")
-        print(badfactsGraph)
+        badfactsGraph[epoch] = (badfacts/26)*100
+        epoch += 1
+        #plotGraph(badfacts, epoch)
+    print("\n==============================\n")
+    print(badfactsGraph)
+    plotGraph(badfactsGraph)
 
-        m
+
     print("-----TESTING-----")
     badfacts = 0
     for i in range(5):
         outO, outH, badfacts = Feedfoward(testing_input[i], testing_target[i], weightInp, weightHid, badfacts)
+
 
 
 
