@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="456edc4e-452e-4e35-bf18-76f18a9b5aa1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Assignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Assignment.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNet.py" afterDir="false" />
-    </list>
+    <list default="true" id="456edc4e-452e-4e35-bf18-76f18a9b5aa1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +139,7 @@
       <workItem from="1576601610943" duration="20076000" />
       <workItem from="1577083160347" duration="23322000" />
       <workItem from="1577187292763" duration="139000" />
-      <workItem from="1577187455699" duration="6898000" />
+      <workItem from="1577187455699" duration="6956000" />
     </task>
     <servers />
   </component>
@@ -160,22 +155,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="650" y="304" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1577184958595" />
-    <state width="1493" height="202" key="GridCell.Tab.0.bottom" timestamp="1577199127862">
+    <state width="1493" height="202" key="GridCell.Tab.0.bottom" timestamp="1577200381088">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577199127862" />
-    <state width="1493" height="202" key="GridCell.Tab.0.center" timestamp="1577199127862">
+    <state width="1493" height="202" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577200381088" />
+    <state width="1493" height="202" key="GridCell.Tab.0.center" timestamp="1577200381088">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1577199127862" />
-    <state width="1493" height="202" key="GridCell.Tab.0.left" timestamp="1577199127862">
+    <state width="1493" height="202" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1577200381088" />
+    <state width="1493" height="202" key="GridCell.Tab.0.left" timestamp="1577200381088">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1577199127862" />
-    <state width="1493" height="202" key="GridCell.Tab.0.right" timestamp="1577199127862">
+    <state width="1493" height="202" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1577200381088" />
+    <state width="1493" height="202" key="GridCell.Tab.0.right" timestamp="1577200381088">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577199127862" />
+    <state width="1493" height="202" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577200381088" />
     <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1577187032018">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
