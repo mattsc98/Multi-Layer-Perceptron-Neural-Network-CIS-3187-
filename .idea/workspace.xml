@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="456edc4e-452e-4e35-bf18-76f18a9b5aa1" name="Default Changelist" comment="" />
+    <list default="true" id="456edc4e-452e-4e35-bf18-76f18a9b5aa1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Assignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Assignment.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MLP.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset.csv" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +35,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -34,7 +43,7 @@
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.NeuralNet">
+  <component name="RunManager" selected="Python.Dataset">
     <configuration name="Dataset" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Assignment" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,10 +110,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Assignment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.NeuralNet" />
         <item itemvalue="Python.Dataset" />
+        <item itemvalue="Python.NeuralNet" />
         <item itemvalue="Python.Test" />
       </list>
     </recent_temporary>
@@ -140,11 +171,17 @@
       <workItem from="1577083160347" duration="23322000" />
       <workItem from="1577187292763" duration="139000" />
       <workItem from="1577187455699" duration="6956000" />
+      <workItem from="1578304949903" duration="4076000" />
+      <workItem from="1578346880605" duration="7376000" />
+      <workItem from="1578389887177" duration="17387000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="273" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1577187353521">
@@ -155,38 +192,38 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="650" y="304" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1577184958595" />
-    <state width="1493" height="202" key="GridCell.Tab.0.bottom" timestamp="1577200381088">
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom" timestamp="1578422950801">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577200381088" />
-    <state width="1493" height="202" key="GridCell.Tab.0.center" timestamp="1577200381088">
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578422950801" />
+    <state width="1493" height="265" key="GridCell.Tab.0.center" timestamp="1578422950801">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1577200381088" />
-    <state width="1493" height="202" key="GridCell.Tab.0.left" timestamp="1577200381088">
+    <state width="1493" height="265" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1578422950801" />
+    <state width="1493" height="265" key="GridCell.Tab.0.left" timestamp="1578422950801">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1577200381088" />
-    <state width="1493" height="202" key="GridCell.Tab.0.right" timestamp="1577200381088">
+    <state width="1493" height="265" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1578422950801" />
+    <state width="1493" height="265" key="GridCell.Tab.0.right" timestamp="1578422950801">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577200381088" />
-    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1577187032018">
+    <state width="1493" height="265" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1578422950801" />
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1578422950802">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577187032018" />
-    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1577187032018">
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578422950802" />
+    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1578422950801">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1577187032018" />
-    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1577187032018">
+    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1578422950801" />
+    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1578422950801">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1577187032018" />
-    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1577187032018">
+    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1578422950801" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1578422950801">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1577187032018" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1578422950801" />
     <state x="277" y="59" key="SettingsEditor" timestamp="1577184965283">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -195,14 +232,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="470" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1576268701541" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1576667938786">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1578351470168">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1576667938786" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1578351470168" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Assignment$Dataset.coverage" NAME="Dataset Coverage Results" MODIFIED="1576665431716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Assignment$NeuralNet.coverage" NAME="NeuralNet Coverage Results" MODIFIED="1577199127842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Assignment$Dataset.coverage" NAME="Dataset Coverage Results" MODIFIED="1578419652951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Assignment$NeuralNet.coverage" NAME="NeuralNet Coverage Results" MODIFIED="1578419472163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Assignment$Test.coverage" NAME="Test Coverage Results" MODIFIED="1576173209794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

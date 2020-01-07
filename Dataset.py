@@ -42,7 +42,7 @@ while(len(set1) < 6):
     pos = random.randrange(0, 62, 2)
     set1.add(dataset[pos])
     print(set1)
-   # print(dataset[pos] + "\t" + dataset[pos+1])
+   #print(dataset[pos] + "\t" + dataset[pos+1])
 
 testing = ['0, 1, 1, 1, 1',     '0, 0, 0',
            '1, 1, 0, 1, 0',     '1, 1, 1',
